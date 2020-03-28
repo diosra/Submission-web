@@ -18,24 +18,21 @@ main {
 }
 
 .jumbotron {
-
     font-size: 20px;
     padding: 60px;
     background-color: burlywood;
     text-align: center;
     color: black;
-
     margin-top: auto;
 }
 
 nav {
-    position: relative;
     background-color: #00a2c6;
     padding: 5px;
     position: sticky;
     top: 0;
     text-align: right;
-
+    z-index: 1;
 }
 
 nav a {
@@ -56,32 +53,72 @@ nav li {
     margin-right: 20px;
 }
 
+
 #content {
     float: left;
     width: 75%;
 }
 
+#deskripsi h2 {
+    padding-left: 37.5%;
+}
+
+#deskripsi p {
+    padding: 20px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+#pendidikan figcaption {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#pendidikan p {
+    align-content: center;
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 5px;
+    max-width: 250px;
+    text-align: center;
+    border-radius: 8px;
+}
+
 .susunatas {
     display: flex;
-    flex-grow: 2;
+
 }
 
 .susunbawah {
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 30px;
 
+}
+
+.susunatas img {
+    display: block;
+    margin: 0 auto;
+}
+
+.susunbawah img {
+    display: block;
+    margin: 0 auto;
 }
 
 .kiri {
-    justify-content: left;
-    align-items: left;
     margin-right: 30px;
-
+    position: relative;
+    flex-basis: 50%;
+    margin-left: 25px;
 }
 
 .kanan {
-    float: right;
+    margin-right: 30px;
+    flex-basis: 50%;
+    position: relative;
+    max-width: 500px;
 }
 
 .kotak {
