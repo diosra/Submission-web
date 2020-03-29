@@ -12,10 +12,18 @@ header {
     display: inline;
 }
 
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
 main {
     padding: 20px;
     overflow: auto;
 }
+
 
 .jumbotron {
     font-size: 20px;
@@ -59,14 +67,34 @@ nav li {
     width: 75%;
 }
 
+.fake {
+    height: 250px;
+    margin: -100px;
+}
+
 #deskripsi h2 {
-    padding-left: 37.5%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    font-size: 40px;
 }
 
 #deskripsi p {
     padding: 20px;
     font-weight: normal;
     text-align: justify;
+    text-indent: 40px;
+}
+
+#pendidikan {
+    overflow: auto;
+}
+
+#pendidikan h2 {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    font-size: 40px;
 }
 
 #pendidikan figcaption {
@@ -87,14 +115,16 @@ nav li {
 
 .susunatas {
     display: flex;
-
+    flex-direction: row;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .susunbawah {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
-
+    margin-bottom: 30px;
 }
 
 .susunatas img {
@@ -116,16 +146,9 @@ nav li {
 
 .kanan {
     margin-right: 30px;
-    flex-basis: 50%;
     position: relative;
-    max-width: 500px;
-}
-
-.kotak {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 20px;
-    margin-top: 20px;
+    flex-basis: 50%;
+    margin-left: 25px;
 }
 
 .box {
@@ -135,14 +158,174 @@ nav li {
     margin-top: 20px;
 }
 
+#hobi {
+    overflow: auto;
+}
+
+#hobi h2 {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+
+#hobi h3 {
+    text-align: center;
+}
+
+#hobi img {
+    border: 5px dashed green;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+#hobi p {
+    border: 3px solid black;
+    padding: 8px;
+    text-align: justify;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+.garismerah {
+    border: 3px solid red;
+}
+
+#future {
+    overflow: auto;
+
+}
+
+#future h2 {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    font-size: 40px;
+}
+
+#future img {
+    display: block;
+    float: left;
+    margin-left: -40px;
+    position: relative;
+}
+
+#future p {
+    text-align: justify;
+    text-indent: 40px;
+    padding: 10px;
+    overflow: auto;
+}
+
+
 aside {
     float: right;
     width: 25%;
     padding-left: 20px;
 }
 
+.tengah {
+    text-align: center;
+}
+
+#spasi th {
+    padding-right: 10px;
+}
+
+#spasi td {
+    padding-left: 20px;
+}
+
 .profile header {
     text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+
+    nav li {
+        display: block;
+    }
+
+    .fake {
+        height: 350px;
+        margin: -100px;
+    }
+
+    #deskripsi h2 {
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 100px;
+        font-size: 40px;
+    }
+
+    #pendidikan h2 {
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 100px;
+        font-size: 40px;
+    }
+
+    #hobi h2 {
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 100px;
+        font-size: 40px;
+    }
+
+    #future h2 {
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 100px;
+        font-size: 40px;
+    }
+
+    #future p {
+        width: 100%;
+    }
+
+    #future img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #future {
+        margin-bottom: 10px;
+    }
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+        overflow: auto;
+    }
+
+    #pendidikan {
+        overflow: auto;
+    }
+
+    #pendidikan .susunatas,
+    .susunbawah {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 50%;
+    }
+
+    #pendidikan .kanan {
+        margin-bottom: 10px;
+    }
+
+    #pendidikan img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    #pendidikan figcaption {
+        width: 100%;
+    }
 }
 
 footer {
