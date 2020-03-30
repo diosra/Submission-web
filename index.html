@@ -11,8 +11,12 @@
 <body>
     <header>
         <div class="jumbotron">
-            <h1>Website Profil</h1>
-            <p>Selamat Datang di website profil submission saya!</p>
+            <h1>Selamat Datang!</h1>
+            <p id="jumboDesk">Webiste Submission untuk kelas Belajar Dasar Pemrograman Web di <span
+                    style="color: darkturquoise;"><a href="https://www.dicoding.com/academies/123" target="blank">
+                        "Dicoding"</a></span>
+            </p>
+            <p>Made by : Muhammad Dio Syahputra</p>
         </div>
         <nav>
             <ul>
@@ -46,35 +50,39 @@
                 <h2>PENDIDIKAN</h2>
                 <hr>
                 <div class="susunatas">
-                    <section class="box kiri" id="gambartopi1">
+                    <section class="box kiri">
                         <figure>
-                            <img src="assets/image/topisd.jpg">
+                            <img src=" assets/image/topisd.jpg">
                             <figcaption>Sekolah Dasar</figcaption>
                         </figure>
-                        <p>SD Kartika V-6 Banjarmasin</p>
+                        <p id="gambartopi1" onmouseover="mouseMasuk(this)" onmouseout="mouseKeluar(this)">SD Kartika V-6
+                            Banjarmasin</p>
                     </section>
-                    <section class="box kanan" id="gambartopi2">
+                    <section class="box kanan">
                         <figure>
                             <img src="assets/image/topismp.png">
                             <figcaption>Sekolah Menengah Pertama</figcaption>
                         </figure>
-                        <p>SMP Negeri 3 Banjarmasin</p>
+                        <p id="gambartopi2" onmouseover="mouseMasuk(this)" onmouseout="mouseKeluar(this)">SMP Negeri 3
+                            Banjarmasin</p>
                     </section>
                 </div>
                 <div class="susunbawah">
-                    <section class="box kiri" id="gambartopi3">
+                    <section class="box kiri">
                         <figure>
                             <img src="assets/image/topisma.jpg">
                             <figcaption>Sekolah Menengah Atas</figcaption>
                         </figure>
-                        <p>SMA Negeri 5 Banjarmasin</p>
+                        <p id="gambartopi3" onmouseover="mouseMasuk(this)" onmouseout="mouseKeluar(this)">SMA Negeri 5
+                            Banjarmasin</p>
                     </section>
-                    <section class="box kanan" id="gambartopi4">
+                    <section class="box kanan">
                         <figure>
                             <img src="assets/image/toga.png">
                             <figcaption>Kampus</figcaption>
                         </figure>
-                        <p>Universitas Islam Kalimantan Muhammad Arsyad Al-Banjari / UNISKA Banjarmasin</p>
+                        <p id="gambartopi4" onmouseover="mouseMasuk(this)" onmouseout="mouseKeluar(this)">Universitas
+                            Islam Kalimantan Muhammad Arsyad Al-Banjari / UNISKA Banjarmasin</p>
                     </section>
                 </div>
             </article>
@@ -132,7 +140,6 @@
                     <h2>Profile Saya</h2>
                     <figure>
                         <img src="assets/image/dio.jpeg">
-                        <figcaption>Foto</figcaption>
                     </figure>
                 </header>
                 <hr>
@@ -171,10 +178,12 @@
     </main>
 
     <footer>
-        <p>Submission kelas web-programming pemula by Muhammad Dio Syahputra &#169; 2020</p>
-        <p>Instagram : <a href="https://www.instagram.com/ordinarydio/" target="_blank">@ordinarydio</a></p>
-        <p>Github : <a href="https://github.com/diosra" target="_blank">diosra</a></p>
+        <p>Submission by Muhammad Dio Syahputra &#169; 2020</p>
+        <p>E-Mail : <a href="mailto:diosyahputra98765@gmail.com" target="_blank"> diosyahputra98765@gmail.com</a> </p>
+        <p class="github">Github : <a href="https://github.com/diosra" target="_blank">diosra</a></p>
     </footer>
+
+    <script src="assets/script.js"></script>
 </body>
 
 </html>

@@ -26,16 +26,28 @@ main {
 
 
 .jumbotron {
-    font-size: 20px;
-    padding: 60px;
-    background-color: burlywood;
     text-align: center;
-    color: black;
     margin-top: auto;
+    padding: 60px;
 }
 
+.jumbotron h1 {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.jumbotron p {
+    color: white;
+    font-weight: bold;
+}
+
+.jumbotron a:hover {
+    color: #11C5C6;
+}
+
+
 nav {
-    background-color: #00a2c6;
+    margin-top: auto;
     padding: 5px;
     position: sticky;
     top: 0;
@@ -59,6 +71,7 @@ nav li {
     display: inline;
     list-style-type: none;
     margin-right: 20px;
+    font-weight: bold;
 }
 
 
@@ -81,13 +94,9 @@ nav li {
 
 #deskripsi p {
     padding: 20px;
-    font-weight: normal;
+    font-weight: bolder;
     text-align: justify;
     text-indent: 40px;
-}
-
-#pendidikan {
-    overflow: auto;
 }
 
 #pendidikan h2 {
@@ -111,7 +120,13 @@ nav li {
     max-width: 250px;
     text-align: center;
     border-radius: 8px;
+    font-weight: bolder;
 }
+
+#pendidikan section {
+    background-color: white;
+}
+
 
 .susunatas {
     display: flex;
@@ -138,17 +153,17 @@ nav li {
 }
 
 .kiri {
-    margin-right: 30px;
+    margin-right: 10px;
     position: relative;
     flex-basis: 50%;
-    margin-left: 25px;
+    margin-left: 10px;
 }
 
 .kanan {
-    margin-right: 30px;
+    margin-right: 10px;
     position: relative;
     flex-basis: 50%;
-    margin-left: 25px;
+    margin-left: 10px;
 }
 
 .box {
@@ -156,10 +171,6 @@ nav li {
     border-radius: 5px;
     padding: 20px;
     margin-top: 20px;
-}
-
-#hobi {
-    overflow: auto;
 }
 
 #hobi h2 {
@@ -186,15 +197,15 @@ nav li {
     text-align: justify;
     margin-top: 15px;
     border-radius: 6px;
+    font-weight: bolder;
 }
 
 .garismerah {
-    border: 3px solid red;
+    border: 3px solid black;
 }
 
 #future {
     overflow: auto;
-
 }
 
 #future h2 {
@@ -216,6 +227,7 @@ nav li {
     text-indent: 40px;
     padding: 10px;
     overflow: auto;
+    font-weight: bolder;
 }
 
 
@@ -223,6 +235,14 @@ aside {
     float: right;
     width: 25%;
     padding-left: 20px;
+}
+
+aside p {
+    font-weight: bolder;
+}
+
+aside table {
+    font-weight: bolder;
 }
 
 .tengah {
@@ -331,13 +351,11 @@ aside {
 footer {
     padding: 20px;
     color: white;
-    background-color: #00a2c6;
-}
-
-footer {
-    padding: 20px;
-    color: white;
-    background-color: #00a2c6;
     text-align: center;
     font-weight: bold;
+}
+
+footer a:hover {
+    color: blue;
+    font-weight: bolder;
 }
